@@ -16,6 +16,7 @@ const onClickAdd = () => {
   const p = document.createElement("p");
   p.className = "todo-item";
   p.innerText = inputText;
+  console.log(p);
 
   //button(完了)タグ生成
   const completeButton = document.createElement("button");
