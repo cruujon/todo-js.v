@@ -40,6 +40,7 @@ const createIncompleteTodo = (todo) => {
       //TODOの内容を取得し、未完了リストに追加
       const backTodoText = backButton.previousElementSibling.innerText;
       createIncompleteTodo(backTodoText);
+      //押された戻すボタンの親のliタグをを削除する
       backButton.closest("li").remove();
     });
     moveTarget.firstElementChild.appendChild(backButton);
